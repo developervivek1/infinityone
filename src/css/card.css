@@ -1,0 +1,105 @@
+/* card script */
+
+.card {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    width: 120px;
+    /* padding: 20px; */
+    
+    background:  #5E91CD2E ;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+}
+
+.card.active{
+  
+    width: 250px;
+}
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+}
+.blob {
+    transform: translate(23%,3%) scale(0.65);
+    fill: transparent;
+    transition: 0.4s;
+}
+.card.active .blob {
+    fill: rgb(19, 89, 79);
+    transform: translate(23%,3%) scale(3.75);
+}
+
+.card .hide1 {
+    margin: 0;
+    padding: 10px;
+    text-align:center;
+    color: #133058;
+    /* background-color: rgb(12, 51, 57); */
+    /* transform: translate(23%,3%) scale(3.75); */
+}
+
+
+.card.active h5{
+   font-weight: bold;
+   margin: 0;
+}
+
+.card.active .hide1{
+    display: none;
+}
+.card.active .hide2{
+    color: #133058;
+    display: block;
+}
+
+.card .hide1{
+    color: #133058;
+    display: block;
+}
+.card .hide2{
+    display: none;
+}
+
+
+/* .card.active h3 {
+    display: block;
+} */
+/* .card h3 {
+    display: none;
+} */
+.card.active .bg-overlay {
+    opacity: 0;
+}
+/* 
+.circular-border {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(12, 51, 57);
+    position: relative;
+}
+i {
+    font-style: normal;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+} */
+/* p {
+    opacity: 0;
+    transition: 0.4s;
+}
+.card.active p {
+    opacity: 1;
+} */

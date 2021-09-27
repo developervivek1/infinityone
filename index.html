@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ui kit installation -->
+    <!-- <link rel="stylesheet" href="uikit/css/uikit-rtl.css">
+    <link rel="stylesheet" href="uikit/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="uikit/css/uikit.css">
+    <link rel="stylesheet" href="uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="uikit/js/uikit-icons.js">
+    <link rel="stylesheet" href="uikit/js/uikit-icons.min.js">
+    <link rel="stylesheet" href="uikit/js/uikit.js">
+    <link rel="stylesheet" href="uikit/js/uikit.min.js"> -->
+        <!-- bs-5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/css/uikit.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/card.css">
+
+</head>
+<body>
+    <header>
+        
+        <nav class="container-flex navbar navbar-light fixed-top">
+            <div class="container">
+              <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+              <img src="src/img/logo.png" alt="logo" width="150px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="src/img/logo.png" alt="logo" width="150px">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <!-- <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                </div> -->
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        
+        
+    </header>
+
+
+    <div class="container-flex bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="head-title pt-5 mt-5">
+                        <h3 class="pt-5 mb-1">Abhi Maan</h3>
+                        <h1 class="display-5 mt-0">Delivering Your  Earnings Now</h1>
+                        
+                        <p>Why wait for client payments? <br/> Get instant access to earnings when <a href="#">Invoice is raised</a></p>
+
+                        <a href="#" ><img class="me-5 btn-img" src="src/img/button.svg" alt="" width="100"></a>
+                    </div>
+                   
+
+                </div>
+                <div class="col-md-8">
+                    <div class="uk-position-relative uk-visible-toggle uk-light pt-5" tabindex="-1" uk-slideshow>
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="src/img/banner1.svg" alt="" class="pe-5">
+                            </li>
+                            <li>
+                                <img src="src/img/banner2.svg" alt="" class="pe-5">
+                            </li>
+                            
+                        </ul>
+<!--                     
+                        <a class="bg-icon uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                         -->
+                        <a class="bg-icon uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    
+                    </div>
+                </div>
+               
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                    <!-- partial:index.partial.html -->
+                    <div class="card-items pt-2">
+
+
+                      <div class="card active">
+                          <svg class="svg-background" viewBox="0 0 600 600">
+                              <path class="blob" d="M192.1,-148.2C230,-105.8,228.6,-27,204.4,33.7C180.2,94.3,133.3,136.8,77.7,165C22.1,193.1,-42.1,206.9,-94.5,185.7C-146.9,164.5,-187.5,108.3,-201.7,46C-215.9,-16.2,-203.7,-84.5,-165.7,-127C-127.7,-169.5,-63.8,-186.3,6.6,-191.6C77.1,-196.9,154.3,-190.7,192.1,-148.2Z"></path>
+                          </svg>
+
+                          <div class="ps-3 pt-3 hide2">
+
+                          
+                          <div class="d-flex align-items-center">
+                            <img src="src/img/card-icon.svg" class="hide2" alt="icon" width="20">
+                            <h5 class="hide2 ps-3">Lender</h5>
+                          </div>
+                          
+                        
+                          <div class="d-flex align-items-center">
+                            <img src="src/img/des-icon.svg" class="hide2" alt="icon" width="30">
+                            <p class="hide2 ps-2 m-0">Inclusion of trusted vendors of credit-worthy anchors</p>
+                          </div>
+                          </div>
+                        
+                          <img src="src/img/aero.svg" alt="aero" class="aero-img hide2" width="40">
+                          
+                          <h5 class="hide1">Lender</h5>
+                          
+                      </div>
+                      
+                      <div class="card ms-3">
+                          <svg class="svg-background" viewBox="0 0 600 600">
+                              <path class="blob" d="M194.1,-154.4C241.7,-95.1,263.7,-14.9,242.8,47C222,108.9,158.3,152.7,93.7,177.1C29.1,201.5,-36.4,206.6,-87.6,182C-138.8,157.3,-175.7,102.9,-189.7,42.9C-203.7,-17.1,-194.9,-82.8,-159.5,-139.3C-124.1,-195.9,-62,-243.5,5.6,-247.9C73.2,-252.4,146.5,-213.8,194.1,-154.4Z"/>
+                          </svg>
+                          <div class="ps-3 pt-3 hide2">
+
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/card-icon.svg" class="hide2" alt="icon" width="20">
+                              <h5 class="hide2 ps-3">Borrower</h5>
+                            </div>
+                            
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/des-icon.svg" class="hide2" alt="icon" width="30">
+                              <p class="hide2 ps-2 m-0">Inclusion of trusted vendors of credit-worthy anchors</p>
+                            </div>
+                            </div>
+                          
+                            <img src="src/img/aero.svg" alt="aero" class="aero-img hide2" width="40">
+                            
+                            <h5 class="hide1">Borrower</h5>
+                        
+                      </div>
+                      
+                      <div class="card ms-3">
+                          <svg class="svg-background" viewBox="0 0 600 600">
+                              <path class="blob" d="M186.5,-139.7C230.7,-93.3,247.9,-16.4,233.4,55.7C218.9,127.7,172.6,195,112.8,217.3C52.9,239.7,-20.4,217.1,-84.7,183.3C-148.9,149.5,-204.1,104.3,-219.6,47.1C-235.2,-10.2,-211,-79.6,-167.8,-125.8C-124.6,-172,-62.3,-195,4.4,-198.5C71.1,-202.1,142.3,-186.1,186.5,-139.7Z" fill="#FE840E" />
+                          </svg>
+                          
+                          <div class="ps-3 pt-3 hide2">
+
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/card-icon.svg" class="hide2" alt="icon" width="20">
+                              <h5 class="hide2 ps-3">Anchor</h5>
+                            </div>
+                            
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/des-icon.svg" class="hide2" alt="icon" width="30">
+                              <p class="hide2 ps-2 m-0">Inclusion of trusted vendors of credit-worthy anchors</p>
+                            </div>
+                            </div>
+                          
+                            <img src="src/img/aero.svg" alt="aero" class="aero-img hide2" width="40">
+                            
+                            <h5 class="hide1">Anchor</h5>
+                        
+                      </div>
+                      
+                      <div class="card ms-3">
+                          <svg class="svg-background" viewBox="0 0 600 600">
+                              <path class="blob" d="M186.5,-139.7C230.7,-93.3,247.9,-16.4,233.4,55.7C218.9,127.7,172.6,195,112.8,217.3C52.9,239.7,-20.4,217.1,-84.7,183.3C-148.9,149.5,-204.1,104.3,-219.6,47.1C-235.2,-10.2,-211,-79.6,-167.8,-125.8C-124.6,-172,-62.3,-195,4.4,-198.5C71.1,-202.1,142.3,-186.1,186.5,-139.7Z" fill="#FE840E" />
+                          </svg>
+                          
+                          <div class="ps-3 pt-3 hide2">
+
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/card-icon.svg" class="hide2" alt="icon" width="20">
+                              <h5 class="hide2 ps-3">Mpower</h5>
+                            </div>
+                            
+                          
+                            <div class="d-flex align-items-center">
+                              <img src="src/img/des-icon.svg" class="hide2" alt="icon" width="30">
+                              <p class="hide2 ps-2 m-0">Inclusion of trusted vendors of credit-worthy anchors</p>
+                            </div>
+                            </div>
+                          
+                            <img src="src/img/aero.svg" alt="aero" class="aero-img hide2" width="40">
+                            
+                            <h5 class="hide1">Mpower</h5>
+                        
+                      </div>
+                      
+                      </div>
+                      <!-- partial -->
+              </div>
+
+            </div>
+
+           
+        
+      
+        
+    </div>
+    </div>
+
+ 
+    <section class="pt-5 bg-light pb-5">
+      <div class="container pt-5 pb-5">
+
+        <h1 class="text-center display-5 fw-bold">Accrued Income Finance</h1>
+
+      <center>  <p class="text-center w-para">Your income is earned the moment service is completed. So why wait to receive payment? Accrued Income Finance gives you access to funds as early as service being completed.</p></center>
+
+
+
+        <div class="row pt-5 mt-5">
+          <div class="col-md">
+        
+
+              <div class="card1 middle1">
+
+              
+                  <div class="circle"> </div>
+
+                  <div class="contents1">
+                
+                    <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                    <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                    <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+        
+
+            <div class="card1 middle1">
+
+            
+                <div class="circle"> </div>
+
+                <div class="contents1">
+              
+                  <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                  <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                  <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+        
+
+          <div class="card1 middle1">
+
+          
+              <div class="circle"> </div>
+
+              <div class="contents1">
+            
+                <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md">
+        
+
+        <div class="card1 middle1">
+
+        
+            <div class="circle"> </div>
+
+            <div class="contents1">
+          
+              <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+              <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+              <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md">
+        
+
+      <div class="card1 middle1">
+
+      
+          <div class="circle"> </div>
+
+          <div class="contents1">
+        
+            <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+            <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+            <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+          </div>
+      </div>
+  </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-white pt-5 pb-5">
+      <div class="container pt-5 pb-5">
+        <h3 class="text-center fw-bold">Accrued Income Finance Technology</h3>
+        <div class="row mt-3">
+          <div class="col-md-3 middle1">
+            <div class="card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4">1</h1>
+              <p class="fw-bold">Allows you to churn your capital faster to grow your business</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="card2 p-3">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4">2</h1>
+              <p class="fw-bold">Allows you to churn your capital faster to grow your business</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="card2 p-3">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4">3</h1>
+              <p class="fw-bold">Allows you to churn your capital faster to grow your business</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="card2 p-3">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4">4</h1>
+              <p class="fw-bold">Allows you to churn your capital faster to grow your business</p>
+              </div>
+            </div>
+          </div>
+         
+          </div>
+          
+        
+          
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pt-5 pb-5">
+      <div class="container pt-5 pb-5">
+        <div class="bg-img text-center">
+         <img src="src/img/bg-logo.png" alt="" width="300">
+          <div class="center1 text-center">
+            <h3 class="mb-2">Technology that</h3>
+            <h2 class="m-0">Provides an Interlocking mechanism</h2>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+<!-- borrower -->
+
+    <section class="pt-5 bg-light pb-5">
+      <div class="container pt-5 pb-5">
+
+        <h1 class="text-center display-5 fw-bold">Borrower</h1>
+
+      
+        <div class="row pt-5">
+          <div class="col-md">
+        
+
+              <div class="card1 middle1">
+
+              
+                  <div class="circle"> </div>
+
+                  <div class="contents1">
+                
+                    <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                    <h5 class="m-0 pt-3 fw-bold">Service order</h5>
+                    <h5 class="m-0 pt-2 fw-bold">Financed</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+        
+
+            <div class="card1 middle1">
+
+            
+                <div class="circle"> </div>
+
+                <div class="contents1">
+              
+                  <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                  <h5 class="m-0 pt-3 fw-bold">Service</h5>
+                  <h5 class="m-0 pt-2 fw-bold">Delivered</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+        
+
+          <div class="card1 middle1">
+
+          
+              <div class="circle"> </div>
+
+              <div class="contents1">
+            
+                <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                <h5 class="m-0 pt-3 fw-bold">Invoice</h5>
+                <h5 class="m-0 pt-2 fw-bold">Raised</h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md">
+        
+
+        <div class="card1 middle1">
+
+        
+            <div class="circle"> </div>
+
+            <div class="contents1">
+          
+              <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+              <h5 class="m-0 pt-3 fw-bold">Grow your</h5>
+              <h5 class="m-0 pt-2 fw-bold">Business</h5>
+            </div>
+        </div>
+    </div>
+  
+          
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-white pt-5 pb-5">
+      <div class="container pt-5 pb-5">
+      
+        <div class="row mt-3">
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+              <p class="text-secondary">Freedom from expensive, unstructured finance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+              <p class="text-secondary">Freedom from expensive, unstructured finance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+              <p class="text-secondary">Freedom from expensive, unstructured finance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+              <p class="text-secondary">Freedom from expensive, unstructured finance</p>
+              </div>
+            </div>
+          </div>
+          
+         
+          </div>
+          
+        
+          
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="bg-white pt-5 pb-5">
+      <div class="container pb-5">
+        <h3 class="text-center">How it works</h3>
+        <div class="row mt-3">
+          <div class="col-md-3 middle1">
+            <div class="how-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">1</h1>
+              <h5 class="fw-bold mt-2 m-0">Sign Up</h5>
+              <p class="mt-2">Join Oneinfinity to get started</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3 middle1">
+            <div class="how-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">2</h1>
+              <h5 class="fw-bold mt-2 m-0">Upload</h5>
+              <p class="mt-2">Upload your work order / POD / invoice</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="how-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">3</h1>
+              <h5 class="fw-bold mt-2 m-0">Encash</h5>
+              <p class="mt-2">Receive unto 95% of advance immediately</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="how-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">4</h1>
+              <h5 class="fw-bold mt-2 m-0">Auto - deduct</h5>
+              <p class="mt-2">Advance deducted when client pays</p>
+              </div>
+            </div>
+          </div>
+         
+          </div>
+          
+        
+          
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- lender -->
+
+
+
+    <section class="pt-5 bg-light pb-5">
+      <div class="container pt-5 pb-5">
+
+        <h1 class="text-center display-5 fw-bold">Lender</h1>
+
+      
+        <div class="row pt-5">
+          <div class="col-md">
+        
+
+              <div class="card1 middle1">
+
+              
+                  <div class="circle"> </div>
+
+                  <div class="contents1">
+                
+                    <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                    <h5 class="m-0 pt-3 fw-bold">Service order</h5>
+                    <h5 class="m-0 pt-2 fw-bold">Financed</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+        
+
+            <div class="card1 middle1">
+
+            
+                <div class="circle"> </div>
+
+                <div class="contents1">
+              
+                  <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                  <h5 class="m-0 pt-3 fw-bold">Service</h5>
+                  <h5 class="m-0 pt-2 fw-bold">Delivered</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+        
+
+          <div class="card1 middle1">
+
+          
+              <div class="circle"> </div>
+
+              <div class="contents1">
+            
+                <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                <h5 class="m-0 pt-3 fw-bold">Invoice</h5>
+                <h5 class="m-0 pt-2 fw-bold">Raised</h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md">
+        
+
+        <div class="card1 middle1">
+
+        
+            <div class="circle"> </div>
+
+            <div class="contents1">
+          
+              <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+              <h5 class="m-0 pt-3 fw-bold">Grow your</h5>
+              <h5 class="m-0 pt-2 fw-bold">Business</h5>
+            </div>
+        </div>
+    </div>
+  
+          
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-white pt-5 pb-5">
+      <div class="container pt-5 pb-5">
+      
+        <div class="row mt-3">
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+              <p class="text-secondary">Earlier introduction into lending cycle - better results than conventional products</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">End to end service</h5>
+              <p class="text-secondary">End to end servicing of the transaction on the platform - hassle free Lending</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3 ">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Risk assessment</h5>
+              <p class="text-secondary">Detailed risk assessment based on a combination of traditional & operational parameters</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 middle1">
+            <div class="icon-card2 p-3">
+              <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+              <div class="text1 ps-3 pe-2">
+                <h5 class="fw-bold mt-2 m-0">Credit assessment</h5>
+              <p class="text-secondary">Continuous credit assessment of vendor and Anchor</p>
+              </div>
+            </div>
+          </div>
+          
+         
+          </div>
+          
+        
+          
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="bg-white pt-5 pb-5">
+      <div class="container pb-5">
+        <h3 class="text-center">How it works</h3>
+        <div class="row mt-3">
+          <div class="col-md middle1">
+            <div class="lender-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">1</h1>
+              <h5 class="fw-bold mt-2 m-0">Define</h5>
+              <p class="mt-2">Define your credit underwriting <br> parameters</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md middle1">
+            <div class="lender-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">2</h1>
+              <h5 class="fw-bold mt-2 m-0">Match</h5>
+              <p class="mt-2">Platform assesses the risk, and matches with right borrowers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md middle1">
+            <div class="lender-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">3</h1>
+              <h5 class="fw-bold mt-2 m-0">Approve</h5>
+              <p class="mt-2">Approve lending limit and interest rate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md middle1">
+            <div class="lender-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">4</h1>
+              <h5 class="fw-bold mt-2 m-0">Auto - deduct</h5>
+              <p class="mt-2">Lend against anchor approved – service order</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md middle1">
+            <div class="lender-card2 p-3 ">
+              <div class="text1 ps-3 pe-2">
+              <h1 class="fw-bold text-secondary display-4 m-0">5</h1>
+              <h5 class="fw-bold mt-2 m-0">Collect</h5>
+              <p class="mt-2">Receive payments directly from anchor</p>
+              </div>
+            </div>
+          </div>
+         
+          </div>
+          
+        
+          
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+        <!--anchor-->
+
+        <section class="pt-5 bg-light pb-5">
+          <div class="container pt-5 pb-5">
+    
+            <h1 class="text-center display-5 fw-bold">Anchor</h1>
+    
+          
+            <div class="row pt-5">
+              <div class="col-md">
+            
+    
+                  <div class="card1 middle1">
+    
+                  
+                      <div class="circle"> </div>
+    
+                      <div class="contents1">
+                    
+                        <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                        <h5 class="m-0 pt-3 fw-bold">Service order</h5>
+                        <h5 class="m-0 pt-2 fw-bold">Financed</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md">
+            
+    
+                <div class="card1 middle1">
+    
+                
+                    <div class="circle"> </div>
+    
+                    <div class="contents1">
+                  
+                      <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                      <h5 class="m-0 pt-3 fw-bold">Service</h5>
+                      <h5 class="m-0 pt-2 fw-bold">Delivered</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+            
+    
+              <div class="card1 middle1">
+    
+              
+                  <div class="circle"> </div>
+    
+                  <div class="contents1">
+                
+                    <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                    <h5 class="m-0 pt-3 fw-bold">Invoice</h5>
+                    <h5 class="m-0 pt-2 fw-bold">Raised</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+            
+    
+            <div class="card1 middle1">
+    
+            
+                <div class="circle"> </div>
+    
+                <div class="contents1">
+              
+                  <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                  <h5 class="m-0 pt-3 fw-bold">Grow your</h5>
+                  <h5 class="m-0 pt-2 fw-bold">Business</h5>
+                </div>
+            </div>
+        </div>
+      
+              
+    
+            </div>
+          </div>
+        </section>
+    
+    
+    
+        <section class="bg-white pt-5 pb-5">
+          <div class="container pt-5 pb-5">
+          
+            <div class="row mt-3">
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+                  <p class="text-secondary">Your vendors paid on requirement - be their preferred client</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">End to end service</h5>
+                  <p class="text-secondary">End to end servicing of the transaction on the platform - hassle free Lending</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Risk Assesment</h5>
+                  <p class="text-secondary">Detailed risk assessment based on a combination of traditional & operational parameters</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Credit Assesment</h5>
+                  <p class="text-secondary">Continuous credit <br> assessment of vendor and <br> Anchor</p>
+                  </div>
+                </div>
+              </div>
+              
+             
+              </div>
+              
+            
+              
+    
+            </div>
+    
+          </div>
+        </section>
+    
+    
+    
+        <section class="bg-white pt-5 pb-5">
+          <div class="container pb-5">
+            <h3 class="text-center">How it works</h3>
+            <div class="row mt-3">
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">1</h1>
+                  <h5 class="fw-bold mt-2 m-0">Approval</h5>
+                  <p class="mt-2">Approve your vendors</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">2</h1>
+                  <h5 class="fw-bold mt-2 m-0">Match</h5>
+                  <p class="mt-2">Validate your vendors service order, proof of delivery and invoice</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">3</h1>
+                  <h5 class="fw-bold mt-2 m-0">Approve</h5>
+                  <p class="mt-2">Help them supplement their cashflows in time</p>
+                  </div>
+                </div>
+              </div>
+              
+             
+              </div>
+              
+            
+              
+    
+            </div>
+    
+          </div>
+        </section>
+
+
+        <!-- value addition for borrower -->
+
+
+        <section class="pt-5 bg-light pb-5">
+          <div class="container pt-5 pb-5">
+    
+            <h1 class="text-center display-5 fw-bold">Value Addition For The Borrower</h1>
+    
+          
+            <div class="row pt-5">
+              <div class="col-md">
+            
+    
+                  <div class="card1 middle1">
+    
+                  
+                      <div class="circle"> </div>
+    
+                      <div class="contents1">
+                    
+                        <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                        <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                        <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md">
+            
+    
+                <div class="card1 middle1">
+    
+                
+                    <div class="circle"> </div>
+    
+                    <div class="contents1">
+                  
+                      <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                      <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                      <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+            
+    
+              <div class="card1 middle1">
+    
+              
+                  <div class="circle"> </div>
+    
+                  <div class="contents1">
+                
+                    <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                    <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                    <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+            
+    
+            <div class="card1 middle1">
+    
+            
+                <div class="circle"> </div>
+    
+                <div class="contents1">
+              
+                  <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                  <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                  <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            
+    
+          <div class="card1 middle1">
+    
+          
+              <div class="circle"> </div>
+    
+              <div class="contents1">
+            
+                <img src="src/img/check.png" alt="check" class="text-warning" width="30">
+                <h5 class="m-0 pt-3 fw-bold">Requirments</h5>
+                <h5 class="m-0 pt-2 fw-bold">Day 0</h5>
+              </div>
+          </div>
+      </div>
+              
+    
+            </div>
+          </div>
+        </section>
+    
+        <section class="bg-white pt-5 pb-5">
+          <div class="container pt-5 pb-5">
+            <h3 class="text-center">Business Need</h3>
+            <div class="row mt-3">
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">1</h1>
+                  <h5 class="fw-bold mt-2 m-0">Approval</h5>
+                  <p class="mt-2">Approve your vendors</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">2</h1>
+                  <h5 class="fw-bold mt-2 m-0">Match</h5>
+                  <p class="mt-2">Validate your vendors service order, proof of delivery and invoice</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 middle1">
+                <div class="anchor-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">3</h1>
+                  <h5 class="fw-bold mt-2 m-0">Approve</h5>
+                  <p class="mt-2">Help them supplement their cashflows in time</p>
+                  </div>
+                </div>
+              </div>
+              
+             
+              </div>
+              
+            
+              
+    
+            </div>
+    
+          </div>
+        </section>
+
+    
+        <section class="bg-white pt-5 pb-5">
+          <div class="container pt-5 pb-5">
+          
+            <div class="row mt-3">
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Quick intro</h5>
+                  <p class="text-secondary">Your vendors paid on requirement - be their preferred client</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">End to end service</h5>
+                  <p class="text-secondary">End to end servicing of the transaction on the platform - hassle free Lending</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Risk Assesment</h5>
+                  <p class="text-secondary">Detailed risk assessment based on a combination of traditional & operational parameters</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="icon-card2 p-3">
+                  <img src="src/img/card-icon.svg" alt="" class="icon-position ps-2">
+                  <div class="text1 ps-3 pe-2">
+                    <h5 class="fw-bold mt-2 m-0">Credit Assesment</h5>
+                  <p class="text-secondary">Continuous credit <br> assessment of vendor and <br> Anchor</p>
+                  </div>
+                </div>
+              </div>
+              
+             
+              </div>
+              
+            
+              
+    
+            </div>
+    
+          </div>
+        </section>
+    
+    
+    
+        <section class="bg-white pt-5 pb-5 mb-5">
+          <div class="container pb-5 mb-3">
+            <h3 class="text-center">How it works</h3>
+            <div class="row mt-3">
+              <div class="col-md-3 middle1">
+                <div class="how-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">1</h1>
+                  <h5 class="fw-bold mt-2 m-0">Sign Up</h5>
+                  <p class="mt-2">Join Oneinfinity to get started</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3 middle1">
+                <div class="how-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">2</h1>
+                  <h5 class="fw-bold mt-2 m-0">Upload</h5>
+                  <p class="mt-2">Upload your work order / POD / invoice</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="how-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">3</h1>
+                  <h5 class="fw-bold mt-2 m-0">Encash</h5>
+                  <p class="mt-2">Receive unto 95% of advance immediately</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 middle1">
+                <div class="how-card2 p-3 ">
+                  <div class="text1 ps-3 pe-2">
+                  <h1 class="fw-bold text-secondary display-4 m-0">4</h1>
+                  <h5 class="fw-bold mt-2 m-0">Auto - deduct</h5>
+                  <p class="mt-2">Advance deducted when client pays11</p>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+              
+            
+              
+    
+            </div>
+    
+          
+        </section>
+
+
+
+          <footer class="text-white pt-4">
+            <div class="container pt-5 pb-5">
+              <div class="row pb-3">
+                <div class="col-md-3">
+                  <h5 class="fw-bold fs-5 text-white">Products</h5>
+                  <ul class="p-0 list-group1">
+                    <li>Mpower</li>
+                    <li>Abhi Maan</li>
+                    <li>Borrower</li>
+                  </ul>
+
+                </div>
+                <div class="col-md-3">
+                  <h5 class="fw-bold fs-5 text-white">Support</h5>
+                  <ul class="p-0 list-group1">
+                    <li>Contact us</li>
+                    <li>Terms & conditions</li>
+                   
+                  </ul>
+
+                </div>
+                <div class="col-md-3">
+                  <h5 class="fw-bold fs-5 text-white">One Infinity</h5>
+                  <ul class="p-0 list-group1">
+                    <li>How it Works</li>
+                    <li>About Us</li>
+                   
+                  </ul>
+
+                </div>
+                <div class="col-md-3">
+                  <h5 class="fw-bold fs-5 text-white">Follow us!</h5>
+                  <ul class="p-0 group1 d-inline-flex">
+                    <li><a href="#"><img src="src/img/instagram.svg" width="20" alt="fb"></a></li>
+                    <li><a href="#"><img src="src/img/facebook.svg" width="20" alt="fb"></a></li>
+                    <li><a href="#"><img src="src/img/linkedin.svg" width="20" alt="fb"></a></li>
+                    <li><a href="#"><img src="src/img/twitter.svg" width="20" alt="fb"></a></li>
+                   
+                  </ul>
+
+                </div>
+
+              </div>
+             
+
+            </div>
+
+            <div class="border-top text-center">
+
+             <p class="pt-4"> ® 2020-2021 - Oneinfinity . All rights reserved.</p>
+
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="src/js/card.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+           <!-- ui kid  -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
