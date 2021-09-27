@@ -197,3 +197,10 @@ footer .list-group1{
 }
 
 
+
+@media (max-width:600px){
+    .middle1{
+        margin-top:35px;
+    }
+
+}
