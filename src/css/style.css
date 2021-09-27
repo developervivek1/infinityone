@@ -202,5 +202,8 @@ footer .list-group1{
     .middle1{
         margin-top:35px;
     }
+    .w-para {
+        width: 100%;
+    }
 
 }
