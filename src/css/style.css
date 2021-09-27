@@ -206,4 +206,8 @@ footer .list-group1{
         width: 100%;
     }
 
+    .card, .card.active{
+        width: 100%;
+    }
+
 }
